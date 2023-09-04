@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <a href="javascript:void(0)">
+            <h3>Download</h3>
+        </a>
+    </div>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script>
+        async function download() {
+            liff.openWindow({
+                url: 'https://i.pinimg.com/originals/d5/6a/f7/d56af787f81df07a9d5bcd8ecad7ff3f.jpg',
+                external: true
+            })
+        }
+
+        async function main() {
+            await liff.init({ liffId: '1625247754-9168rvgx' })
+        }
+
+        main()
+    </script>
+</body>
+</html>
